@@ -1,7 +1,7 @@
-import React, { createContext, useState, useCallback } from 'react';
+import React, { createContext, useState, useCallback, ReactNode, FC } from 'react';
 import { ToastProps } from '../types';
 
-interface ToastContextProps {
+export interface ToastContextProps {
   toasts: ToastProps[];
   addToast: (toast: Omit<ToastProps, 'id'>) => void;
   removeToast: (id: string) => void;
@@ -13,7 +13,7 @@ export const ToastContext = createContext<ToastContextProps>({
   removeToast: () => {},
 });
 
-export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const ToastProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [toasts, setToasts] = useState<ToastProps[]>([]);
 
   const addToast = useCallback(
