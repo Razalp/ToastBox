@@ -192,11 +192,11 @@ function ToastDemo() {
 
 ## 📝 License
 
-MIT © [Your Name]
+MIT © Razal
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/react-modern-toaster/issues).
+
 
 ## 💖 Support
 
@@ -204,4 +204,4 @@ Give a ⭐️ if this project helped you!
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Razal
